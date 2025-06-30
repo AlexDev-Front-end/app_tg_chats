@@ -1,22 +1,26 @@
-# Структура проєкту
-backend - Python, FastAPI, Telethon
-fronend - Next.js, TailwindCSS
+# Telegram Chat Viewer
 
-# Для старту проєкта
-# Backend:
-Скопіюйте '.env.example' як '.env' та вкажіть свої значення в ньому.
-Встановіть залежності:
+Приложение для просмотра сообщений и чатов Telegram через FastAPI и Next.js.
+
+## Структура проекта
+
+- **/backend** — серверная часть (FastAPI, Telethon)
+- **/frontend** — клиентская часть (Next.js, TailwindCSS)
+
+## Быстрый старт
+
+### Backend
+
+1. Скопируйте `.env.example` как `.env` и укажите свои значения.
+2. Установите зависимости:
+   ```bash
+   cd backend
+   python -m venv .venv
+   source .venv/bin/activate  # или .venv\Scripts\activate на Windows
+   pip install -r requirements.txt
+   ```
+3.Запустите сервер
+    ```bash
     cd backend
-    python -m venv .venv
-    cd .venv/Scripts/activate
-    cd ../../
-    pip install -r requirements.txt
-Запуск сервера:
     uvicorn app.main:app --reload
-
-# Frontend:
-Встановіть залежності:
-    cd frontend
-    npm install
-Запуск фронтенда:
-    npm run dev
+    ```
