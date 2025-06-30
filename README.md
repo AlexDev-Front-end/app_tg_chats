@@ -17,7 +17,9 @@
    pip install -r requirements.txt
    ```
 3. Запуск сервера:
+   ```
    uvicorn app.main:app --reload
+   ```
 
 ### Frontend
 1. Встановіть залежності:
