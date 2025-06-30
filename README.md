@@ -1,27 +1,25 @@
-# Telegram Chat Viewer
+## Структура проєкту
 
-Приложение для просмотра сообщений и чатов Telegram через FastAPI и Next.js.
+- **/backend** — Python, FastAPI, Telethon
+- **/frontend** — Next.js, TailwindCSS
 
-## Структура проекта
-
-- **/backend** — серверная часть (FastAPI, Telethon)
-- **/frontend** — клиентская часть (Next.js, TailwindCSS)
-
-## Быстрый старт
+## Для старту проєкта
 
 ### Backend
 
-1. Скопируйте `.env.example` как `.env` и укажите свои значения.
-2. Установите зависимости:
-   ```bash
+1. Скопіюйте `.env.example` як `.env` та вкажіть свої значення в ньому.
+2. Встановіть залежності:
    cd backend
    python -m venv .venv
-   source .venv/bin/activate  # или .venv\Scripts\activate на Windows
+   cd .venv/Scripts/activate
+   cd ../../
    pip install -r requirements.txt
-   ```
-3.Запустите сервер
-    ```bash
-    
-    cd backend
-    uvicorn app.main:app --reload
-    ```
+3. Запуск сервера:
+   uvicorn app.main:app --reload
+
+### Backend
+1. Встановіть залежності:
+   cd frontend
+   npm install
+2. Запуск фронтенда:
+   npm run dev
