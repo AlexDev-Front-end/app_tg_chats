@@ -17,7 +17,7 @@
 3. Запуск сервера:
    uvicorn app.main:app --reload
 
-### Backend
+### Frontend
 1. Встановіть залежності:
    cd frontend
    npm install
