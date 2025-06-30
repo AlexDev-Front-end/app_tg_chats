@@ -26,4 +26,6 @@
    npm install
    ```
 2. Запуск фронтенда:
+   ```
    npm run dev
+   ```
